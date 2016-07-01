@@ -1,3 +1,13 @@
+/* theme colors 
+
+    dark-blue: #113051;
+    medium-blue:  #3d5596;
+    bright-blue: #48A1FF;
+    off-white: #f1f1f1;
+
+*/
+
+
  * {
     font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -94,7 +104,8 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 1.5em;
+        text-transform: lowercase;
+        font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -117,11 +128,16 @@ header .intro-text .skills {
 
 .navbar-default .navbar-brand {
     color: #f1f1f1;
+    text-transform: lowercase;
+    border-left: 2px solid #48A1FF;
+    border-right: 2px solid #48A1FF;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #48A1FF;
+    border-left: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -432,11 +448,6 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .btn-default {
     margin-bottom: 20px;
 }
@@ -521,4 +532,41 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+/**********************************/
+/* blog.html styles */
+/**********************************/
+.blog-container {
+    margin-top: 100px;
+    background: #f1f1f1;
+    width: 75%;
+    border-left: 10px solid #113051;
+    border-right: 10px solid #113051;
+}
+
+.blog-post-title {
+    border-bottom: 2px solid #3d5596;
+}
+
+.blog-post {
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #3d5596;
+}
+
+h3 small {
+    margin-left: 20px;
+    color: #48A1FF;
+}
+
+.blog-content {
+    font-size: 1.2em;
+}
+
+.blog-content .callout {
+    font-style: bolder;
+    text-decoration: underline;
 }
