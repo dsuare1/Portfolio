@@ -62,7 +62,7 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 header .intro-text .name {
@@ -154,12 +154,14 @@ header .intro-text .skills {
     position: relative;
     color: #f1f1f1;
     text-decoration: none;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .navbar-default .navbar-nav li a:hover {
     color: #48A1FF;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar-default .navbar-nav li a:before {
@@ -389,11 +391,12 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #f1f1f1;
 }
 
 footer h3 {
     margin-bottom: 30px;
+    color: #48A1FF;
 }
 
 footer .footer-above {
