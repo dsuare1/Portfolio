@@ -578,3 +578,9 @@ h3 small {
     font-style: bolder;
     text-decoration: underline;
 }
+
+@media(max-width:767px) {
+    .blog-container {
+        margin-top: 50px;
+    }
+}
