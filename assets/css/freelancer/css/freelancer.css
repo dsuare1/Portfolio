@@ -235,6 +235,11 @@ section.about {
     margin-top: 20px;
 }
 
+.tech-stack-header {
+    color: #f1f1f1;
+    margin-top: 50px;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
