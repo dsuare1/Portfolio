@@ -235,6 +235,28 @@ section.about {
     margin-top: 20px;
 }
 
+.cv-pdf-row {
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.cv-pdf-row h3 {
+    margin-bottom: 15px;
+}
+
+.cv-pdf-row a:visited,
+.cv-pdf-row a:hover,
+.cv-pdf-row a:focus,
+.cv-pdf-row a:active {
+    text-decoration: none;
+}
+
+.cv-text {
+    color: #48A1FF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 .tech-stack-header {
     color: #f1f1f1;
     margin-top: 50px;
