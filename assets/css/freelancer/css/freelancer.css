@@ -341,6 +341,10 @@ section.about {
     background: #fff;
 }
 
+#contact-email {
+    text-transform: lowercase;
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
