@@ -276,8 +276,29 @@ section.about {
     background: #113051;
 }
 
+.fa-stack {
+    transition: all 500ms ease-in-out;
+}
+
+h4 {
+    transition: all 500ms ease-in-out;
+}
+
+.fa-stack:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.fa-stack:hover + h4 {
+    transform: scale(1.2, 1.2);
+    color: #48A1FF;
+}
+
 #portfolio {
     background: #f1f1f1;
+}
+
+.portfolio-preview-title {
+    color: #48A1FF;
 }
 
 #portfolio .portfolio-item {
