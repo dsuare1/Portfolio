@@ -70,6 +70,29 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="blog-post-title">
+                    <h3>Week 13 - Web Servers with Node.js + Express<small>7/9/2016</small></h3>
+                </div>
+                <div class="blog-post">
+                    <p class="blog-content">Man...web servers.  They're these big, loud, mysterious machines that reside in these giant warehouses out in the desert or underground somewhere...</p>
+                    <p class="blog-content">...or are they?  I mean, the answer is probably yes, that's an accurate description.  But...they can also be something much more simple, much smaller.  Even...gasp...my own laptop or PC can be a web server!  Huh?</p>
+                    <p class="blog-content">The hard and fast definition of a web server, according to the <a href="https://en.wikipedia.org/wiki/Web_server" target="_blank">link on wikipedia</a> is "a computer system that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.  The term can refer to the entire system, or specifically to the software that accepts and supervises the HTTP requests."</p>
+                    <p class="blog-content">The <strong>software that accepts and supervises the HTTP requests.</strong>...this is where the line gets blurry, but also where things get interesting and exciting.</p>
+                    <p class="blog-content">Enter <a href="https://www.npmjs.com/package/express" target="_blank">Express</a>, a Node module available from <a href="https://www.npmjs.com/" target="_blank">NPM</a>.  With this little package, you too can spin up your own web server in a matter of minutes! (read that last line with a cheesy informercial voice; it makes it better)</p>
+                    <p class="blog-content">But really though...this is amazing!  With just a few lines of code, we can spin up our own server and start to serve HTML to the browser; amazing!  Take a look at the code below:
+                    <pre><code>var express = require('express');<br>var app = express();<br><br>app.get('/', function(req, res) {<br>    res.send('Hello World');<br>});<br><br>var PORT = 3000;<br><br>app.listen(PORT, function() {<br>    console.log('Server listening on ' + PORT)<br>});</code></pre></p>
+                    <p class="blog-content">With just those few lines of code above, you can spin up a web server that listens on port 3000 and, using Node in the terminal, get that server to serve up a web page!  The result of the code above isn't too fancy; you'll just see 'Hello World' printed on the screen; but where you can take it from there is pretty exciting.</p>
+                    <p class="blog-content">Side note:  To get the above working properly, it assumes that you have Node installed on your machine, as well as <a href="https://www.npmjs.com/">Node Package Manager</a>, which in turn will allow you to easily install <a href="https://www.npmjs.com/package/express" target="_blank">Express</a>.</p>
+                    <p class="blog-content">Side note #2:  The port defined here (aka 3000) is artibrary; it could have been 8000, or 8080, or 8081, and so on.  But...there are some ports that are reserved for special purposes (particularly those below 1000); you can check out a list of ports and their uses <a href="http://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html" target="_blank">here</a>.</p>
+                </div>
+                <div class="blog-post-title">
+                    <h3>Week 12 - MySQL<small>7/9/2016</small></h3>
+                </div>
+                <div class="blog-post">
+                    <p class="blog-content">Well, we've finally made it!  As a 'Full Stack' course, we've finally completed the stack; we've arrived at databases!  This week was a bit hectic with us not having class on Monday (July 4th holiday).  We had to try to fit a lot of information in and, unfortunately, it seems there wasn't a lot of planning ahead of time to accomodate this in the curriculum.  Self study it is!</p>
+                    <p class="blog-content">Apparently <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a> is quite an old technology (according to the link, it first appeared in 1974).  The technology we are learning is called <a href="https://www.mysql.com/" target="_blank">MySQL</a>, which is an open-source project designed to work with SQL databases.  While we only touched on the surface of the funcionality and multitude of queries one can make using the structured language, it's clear that the possibilities are pretty vast.  I could see how working with databases could easily encompass its own role in a company (and probably does, I'd imagine).</p>
+                    <p class="blog-content">I have to admit that the backend of things always seemed a little scary to me (and still does).  It's not as flashy as the front end; you don't see cool animations, or get to implement flashy designs to create unique and awesome user experiences.  But as I've been learning over these past couple of weeks while working in the backend...one of the greatest benefits of backend work is that the environment, once chosen, doesn't really change too much.  You don't have to account for different browsers, different devices, different screen sizes.  You write your code, and it (hopefully) works.</p>
+                </div>
+                <div class="blog-post-title">
                     <h3>Week 11 - Object Constructors<small>7/2/2016</small></h3>
                 </div>
                 <div class="blog-post">
